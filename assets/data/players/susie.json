@@ -943,7 +943,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "triProjetileCold"
                 },
                 "offset": {
@@ -1032,7 +1032,7 @@
                         "z": 0
                     },
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "coldChain"
                     },
                     "offset": {
@@ -1052,7 +1052,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "iceChainTarget"
                     },
                     "offset": {
@@ -1102,7 +1102,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "snowflakeAuar"
                     },
                     "offset": {
@@ -1190,7 +1190,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "triProjetileColdKill"
                 },
                 "offset": {
@@ -1264,7 +1264,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "flameSwordRing"
                 },
                 "offset": {
@@ -1378,7 +1378,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "fireWeaponGlow"
                 },
                 "offset": {
@@ -1519,7 +1519,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "fireWeaponGlow"
                 },
                 "offset": {
@@ -1635,7 +1635,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "fireWeaponGlow"
                 },
                 "offset": {
@@ -1776,7 +1776,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "fireWeaponGlow"
                 },
                 "offset": {
@@ -1892,7 +1892,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "fireWeaponGlow"
                 },
                 "offset": {
@@ -2033,7 +2033,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "fireWeaponGlow"
                 },
                 "offset": {
@@ -2149,7 +2149,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "fireWeaponGlow"
                 },
                 "offset": {
@@ -2290,7 +2290,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "fireWeaponGlow"
                 },
                 "offset": {
@@ -2404,7 +2404,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "scytheProjetile"
                 },
                 "offset": {
@@ -2423,7 +2423,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "fireWeaponGlow"
                 },
                 "offset": {
@@ -2456,7 +2456,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "ExplosionFire"
                 },
                 "offset": {
@@ -2862,7 +2862,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "fireWeaponGlow"
                 },
                 "offset": {
@@ -3319,7 +3319,7 @@
                 "fixPos": false,
                 "type": "SHOW_EFFECT",
                 "effect": {
-                    "sheet": "combat.spheroknight",
+                    "sheet": "combat.spheroknight-legacy",
                     "name": "waveSwirlFast"
                 },
                 "offset": {
@@ -3761,7 +3761,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepNeutral"
                     },
                     "offset": {
@@ -3846,7 +3846,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepNeutralRev"
                     },
                     "offset": {
@@ -3931,7 +3931,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "finisherNeutral"
                     },
                     "offset": {
@@ -4113,7 +4113,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "nSpecialSweepEnd"
                     },
                     "offset": {
@@ -4183,7 +4183,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "nSpecialCharge"
                     },
                     "offset": {
@@ -4242,7 +4242,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "nSpecialSweep"
                     },
                     "offset": {
@@ -4320,7 +4320,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "nSpecialCharge"
                     },
                     "offset": {
@@ -4399,7 +4399,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "wervynSweep"
                     },
                     "offset": {
@@ -4514,7 +4514,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepHeat"
                     },
                     "offset": {
@@ -4599,7 +4599,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepHeatRev"
                     },
                     "offset": {
@@ -4684,7 +4684,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "finisherHeat"
                     },
                     "offset": {
@@ -4893,7 +4893,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "flameDash"
                     },
                     "offset": {
@@ -5420,7 +5420,7 @@
                         "fixPos": false,
                         "type": "SHOW_EFFECT",
                         "effect": {
-                            "sheet": "combat.spheroknight",
+                            "sheet": "combat.spheroknight-legacy",
                             "name": "sweepHeat"
                         },
                         "offset": {
@@ -5520,7 +5520,7 @@
                         "fixPos": false,
                         "type": "SHOW_EFFECT",
                         "effect": {
-                            "sheet": "combat.spheroknight",
+                            "sheet": "combat.spheroknight-legacy",
                             "name": "ExplosionFire"
                         },
                         "offset": {
@@ -5598,7 +5598,7 @@
                         "fixPos": false,
                         "type": "SHOW_EFFECT",
                         "effect": {
-                            "sheet": "combat.spheroknight",
+                            "sheet": "combat.spheroknight-legacy",
                             "name": "potHole"
                         },
                         "offset": {
@@ -5627,7 +5627,7 @@
                         "fixPos": false,
                         "type": "SHOW_EFFECT",
                         "effect": {
-                            "sheet": "combat.spheroknight",
+                            "sheet": "combat.spheroknight-legacy",
                             "name": "potHoleFlame"
                         },
                         "offset": {
@@ -6116,7 +6116,7 @@
                         "fixPos": false,
                         "type": "SHOW_EFFECT",
                         "effect": {
-                            "sheet": "combat.spheroknight",
+                            "sheet": "combat.spheroknight-legacy",
                             "name": "fireWeaponSpawn"
                         },
                         "offset": {
@@ -6426,7 +6426,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "flameDash"
                     },
                     "offset": {
@@ -6648,7 +6648,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "ExplosionFire"
                     },
                     "offset": {
@@ -6797,7 +6797,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepCold"
                     },
                     "offset": {
@@ -6882,7 +6882,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepColdRev"
                     },
                     "offset": {
@@ -6967,7 +6967,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "finisherCold"
                     },
                     "offset": {
@@ -7073,7 +7073,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "iceSpear"
                     },
                     "offset": {
@@ -7336,7 +7336,7 @@
                         "fixPos": false,
                         "type": "SHOW_EFFECT",
                         "effect": {
-                            "sheet": "combat.spheroknight",
+                            "sheet": "combat.spheroknight-legacy",
                             "name": "iceSpearBig"
                         },
                         "offset": {
@@ -7590,7 +7590,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepShock"
                     },
                     "offset": {
@@ -7675,7 +7675,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepShockRev"
                     },
                     "offset": {
@@ -7760,7 +7760,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "finisherShock"
                     },
                     "offset": {
@@ -7904,7 +7904,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepChainsaw"
                     },
                     "offset": {
@@ -7955,7 +7955,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepChainsawForStab"
                     },
                     "offset": {
@@ -7985,7 +7985,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "stabChainsaw"
                     },
                     "offset": {
@@ -8046,7 +8046,7 @@
                     "fixPos": true,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "shockEffect"
                     },
                     "offset": {
@@ -8169,7 +8169,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "cogTrail"
                     }
                 }, {
@@ -8310,7 +8310,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepWave"
                     },
                     "offset": {
@@ -8395,7 +8395,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "sweepWaveRev"
                     },
                     "offset": {
@@ -8480,7 +8480,7 @@
                     "fixPos": false,
                     "type": "SHOW_EFFECT",
                     "effect": {
-                        "sheet": "combat.spheroknight",
+                        "sheet": "combat.spheroknight-legacy",
                         "name": "finisherWave"
                     },
                     "offset": {

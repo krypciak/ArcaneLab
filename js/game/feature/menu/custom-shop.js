@@ -1,5 +1,4 @@
 ig.module("game.feature.menu.gui.al-shop-menu").requires("impact.feature.gui.gui", "impact.feature.gui.base.basic-gui").defines(function() {
-	const dbs = ig.arcaneLabDatabase.get("customShop");
 	
 	const cantTradeableNow = (g) => {
 		var ac = new ig.VarCondition(g.activeCondition || "true").evaluate(),
@@ -137,6 +136,7 @@ ig.module("game.feature.menu.gui.al-shop-menu").requires("impact.feature.gui.gui
             this.doStateTransition("HIDDEN", true)
 		},
 		show: function() {
+			const dbs = ig.arcaneLabDatabase.get("customShop");
             sc.menu.buttonInteract.addGlobalButton(this.cycleLeft, this.onLeftPressCheck.bind(this), true);
             sc.menu.buttonInteract.addGlobalButton(this.cycleRight, this.onRightPressCheck.bind(this), true);
             this.doStateTransition("DEFAULT");
@@ -171,6 +171,7 @@ ig.module("game.feature.menu.gui.al-shop-menu").requires("impact.feature.gui.gui
             this.doStateTransition("HIDDEN")
 		},
         cycleGroups: function(b) {
+			const dbs = ig.arcaneLabDatabase.get("customShop");
 			if(sc.menu.shopID) {
 				var dg = sc.menu.shopID;
 			}else {
@@ -269,6 +270,7 @@ ig.module("game.feature.menu.gui.al-shop-menu").requires("impact.feature.gui.gui
             this.doStateTransition("HIDDEN")
         },
 		loadSlots: function() {
+			const dbs = ig.arcaneLabDatabase.get("customShop");
 			this.listButtons = [];
             this.buttongroup.clear();
             this.list.clear();

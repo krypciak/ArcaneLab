@@ -3038,7 +3038,7 @@
 				}
 			}],
 			"endlessDialog": false,
-			"once": true,
+			"once": false,
 			"mapId": 408,
 			"spawnCondition": "true"
 		}
@@ -5757,15 +5757,6 @@
 					"ko_KR": "\\c[3]사갑사\\c[0]"
 				},
 				"event": [{
-					"side": "RIGHT",
-					"order": 0,
-					"clearSide": false,
-					"type": "ADD_MSG_PERSON",
-					"person": {
-						"person": "guildac.raclicia",
-						"expression": "DEFAULT"
-					}
-				}, {
 					"text": {
 						"en_US": "\\c[3]Quadrotect\\c[0]\n\n\\c[3]Quadrotect\\c[0] is a defensive variant of \\c[3]Quadroguard\\c[0].\ntheir shields are better designed to protect the teams than to counter or attack opponents.",
 						"ko_KR": "TODO"
@@ -6032,7 +6023,7 @@
 					}
 				}, {
 					"text": {
-						"en_US": "\\c[3]Triarchery\\c[0]\n\n\\c[3]Triarchery\\c[0] is the hybrid class that has both strong close combat and long-range combat.\nThey use a bow to shoot strong arrows, and the bow can be divided into a pair of shortswords for close combat.",
+						"en_US": "\\c[3]Triarchery\\c[0]\n\n\\c[3]Triarchery\\c[0] is the hybrid class that has both strong close combat and long-range combat.",
 						"ko_KR": "TODO"
 					},
 					"center": true,
@@ -6041,7 +6032,7 @@
 					"type": "SHOW_BOARD_MSG"
 				}, {
 					"text": {
-						"en_US": "TODO",
+						"en_US": "They use a bow to shoot strong arrows, and the bow can be divided into a pair of shortswords for close combat.\n\nNote: Arcane Lab doesn't provide you with any wings. Don't be deceived by someone pretending to be an \"angel\".",
 						"ko_KR": "TODO"
 					},
 					"center": true,

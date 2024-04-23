@@ -1,6 +1,6 @@
 {
   "id": "arcane-lab",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "title": "\\c[3]Arcane Lab\\c[0]",
   "description": ":)",
   "repository": "https://github.com/2hh8899/ArcaneLab",
@@ -8,7 +8,10 @@
   "authors": ["eisus", "ac2pic", "WatDuhHekBro"],
   "dependencies": {
     "ccloader": "^2.14.1",
-    "extendable-severed-heads": "^1.0.0"
+	"item-api": "^0.*",
+    "extendable-severed-heads": "^1.0.0",
+	"modifier-api": "^0.1.0",
+	"cc-alybox": ">=1.0.0"
   },
   "prestart": "prestart.js"
 }

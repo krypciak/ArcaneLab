@@ -14,11 +14,11 @@
                         "reaim": 0.4
                     }
                 }, {
-                    "followUp": "attackEnd",
+                    "followUp": "attackEndEptAL",
                     "wait": false,
                     "viaWalkConfig": false,
                     "type": "SHOW_ANIMATION",
-                    "anim": "throwShort"
+                    "anim": "attackSlowAL"
                 }, {
                     "align": "BOTTOM",
                     "radius": 48,
@@ -99,11 +99,11 @@
                         "reaim": 0.4
                     }
                 }, {
-                    "followUp": "attackEndRev",
+                    "followUp": "attackEndRevEptAL",
                     "wait": false,
                     "viaWalkConfig": false,
                     "type": "SHOW_ANIMATION",
-                    "anim": "throwShortRev"
+                    "anim": "attackRevSlowAL"
                 }, {
                     "align": "BOTTOM",
                     "radius": 48,
@@ -185,11 +185,11 @@
                         "reaim": 0.9
                     }
                 }, {
-                    "followUp": "attackEnd",
+                    "followUp": "attackEndEptAL",
                     "wait": false,
                     "viaWalkConfig": false,
                     "type": "SHOW_ANIMATION",
-                    "anim": "attackFinisher"
+                    "anim": "attackFinisherSlowAL"
                 }, {
                     "align": "BOTTOM",
                     "radius": 48,

@@ -44,6 +44,7 @@ ig.module("game.feature.skills.al-custom-skills").requires(	"game.feature.player
 		}
     }
     ig.ENTITY.Player.inject({
+		storedWalkAnimsBackup: {},
         getChargeAction: function(a, b) {
             for (var c = a.actionKey; b && !this.model.getAction(sc.PLAYER_ACTION[c + b]);) b--;
             if (!b) return 0;
@@ -116,6 +117,43 @@ ig.module("game.feature.skills.al-custom-skills").requires(	"game.feature.player
             }
         }
 	});
+	sc.CrossCode.inject({
+		createPlayer: function() {
+			var b = this.getEntitiesByType(ig.ENTITY.Player)[0];
+			b || (b = this.spawnEntity(ig.ENTITY.Player, 0, 0, 0));
+			
+			b.storedWalkAnimsBackup = b.storedWalkAnims;
+			this.playerEntity = b;
+			
+			var AlCw = this.spawnEntity(ig.AlPlayerCustomWalksUpdater,0,0,0);
+			console.log(b);
+		}
+	});
+	//I just didn't want to inject Lea's update function
+	ig.AlPlayerCustomWalksUpdater = ig.Entity.extend({
+		walkAnimsBackup: null,
+		timeToUpdtAnim: false,
+		timeToUpdtAnimLatch: false,
+		init: function(a, b, c, e) {
+			this.parent(a, b, c, e);
+			this.coll.type = ig.COLLTYPE.NONE;
+			this.coll.setSize(0, 0, 0);
+			this.walkAnimsBackup = JSON.parse(JSON.stringify(ig.game.playerEntity.storedWalkAnims));
+		},
+		update: function() {
+			if(!sc.model.isCutscene() && sc.model.player.getItemAmount("toggle-arcanelab-skill") != 0 && sc.model.player.getToggleItemState("toggle-arcanelab-skill") && ig.vars.get("custom-skills.walk-anims.active") == true && new ig.VarCondition(ig.vars.get("custom-skills.walk-anims.activeCondition")).evaluate()) {
+				this.timeToUpdtAnim = true;
+			}else{
+				this.timeToUpdtAnim = false;
+			}
+			if (this.timeToUpdtAnim != this.timeToUpdtAnimLatch) {
+				this.timeToUpdtAnimLatch = this.timeToUpdtAnim;
+				var walkAnimsToApply = JSON.parse(JSON.stringify(this.walkAnimsBackup));
+				ig.game.playerEntity.storedWalkAnims = Object.assign(walkAnimsToApply, this.timeToUpdtAnim?ig.vars.get("custom-skills.walk-anims.data"):{});
+			}
+		}
+	});
+	
 	
 	//Idk why I can't inject custom script into sc.StatusViewCombatArtsEntry.init for use, so I just clone that class. Stupid trick but it works perfetly
     sc.StatusViewCombatArtsCustomEntry =

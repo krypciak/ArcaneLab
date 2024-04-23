@@ -228,6 +228,55 @@
 				"src": "media/gui/custom-skills/al-spheroknight.png"
 			}
 		},
+		"alTriarcheryBaseSet": {
+			"list": [{
+				"replaceTo": "AL_TRIARCHERY_AIM_START",
+				"actionCheckKey": "AIM_START"
+			}, {
+				"replaceTo": "AL_TRIARCHERY_THROW_NORMAL",
+				"actionCheckKey": "THROW_NORMAL"
+			}, {
+				"replaceTo": "AL_TRIARCHERY_THROW_NORMAL",
+				"actionCheckKey": "THROW_NORMAL_REV"
+			}, {
+				"replaceTo": "AL_TRIARCHERY_THROW_CHARGED",
+				"actionCheckKey": "THROW_CHARGED"
+			}, {
+				"replaceTo": "AL_TRIARCHERY_THROW_CHARGED",
+				"actionCheckKey": "THROW_CHARGED_REV"
+			}, {
+				"replaceTo": "AL_TRIARCHERY_ATTACK",
+				"actionCheckKey": "ATTACK"
+			}, {
+				"replaceTo": "AL_TRIARCHERY_ATTACK_REV",
+				"actionCheckKey": "ATTACK_REV"
+			}, {
+				"replaceTo": "AL_TRIARCHERY_ATTACK_FINISHER",
+				"actionCheckKey": "ATTACK_FINISHER"
+			}],
+			"element": "BASE",
+			"activeCondition": "true",
+			"name": {
+				"en_US": "Base of Triarchery",
+				"ko_KR": "삼궁사의 기본"
+			},
+			"hasWalkAnims": true,
+			"walkAnims": {
+				"aiming": {
+					"idle": "aimBowAL",
+					"move": "aimBowMoveAL",
+					"moveRev": "aimBowMoveRevAL",
+					"damage": "damage"
+				}
+			},
+			"description": {
+				"en_US": "This is the base Triarchery set.",
+				"ko_KR": "삼궁사의 기본 세트입니다."
+			},
+			"icon": {
+				"src": "media/gui/custom-skills/al-triarchery.png"
+			}
+		},
 		"alPentagunnerColdThrow3": {
 			"list": [{
 				"replaceTo": "AL_PENTAGUNNER_THROW_SPECIAL3",

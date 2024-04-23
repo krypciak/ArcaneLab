@@ -17,6 +17,8 @@ import "./js/game/feature/inventory/modifier-cards.js";
 import "./js/game/feature/map-content/entities/custom-elevators.js";
 import "./js/game/feature/map-content/entities/custom-entities.js";
 
+import "./js/game/feature/menu/custom-modifier-cards.js";
+import "./js/game/feature/menu/custom-shop.js";
 import "./js/game/feature/menu/custom-skills.js";
 import "./js/game/feature/menu/custom-teleporter-map.js";
 

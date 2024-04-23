@@ -1,6 +1,4 @@
 ig.module("game.feature.menu.gui.al-modifier-card-menu").requires("impact.feature.gui.gui", "impact.feature.gui.base.basic-gui").defines(function() {
-	const dbs = ig.arcaneLabDatabase.get("modifierCards");
-	const dbl = dbs.both.concat(dbs.positive, dbs.negative);
 	
 	const defaultModifierIcon = new ig.Image("media/gui/menu.png");
 	const getModifierIcon = (a) => {
@@ -406,6 +404,7 @@ ig.module("game.feature.menu.gui.al-modifier-card-menu").requires("impact.featur
 		},
 		doCraft: function() {
 			sc.model.player.removeItem("key-arcanelab-modifier-frag", this.useAmount);
+			const dbs = ig.arcaneLabDatabase.get("modifierCards");
 			var dbsCopy = JSON.parse(JSON.stringify(dbs)),
 				dboP = dbsCopy.positive,
 				dboB = dbsCopy.both,
@@ -980,6 +979,8 @@ ig.module("game.feature.menu.gui.al-modifier-card-menu").requires("impact.featur
 		noPercentData: 0,
 		init: function(a, b) {
 			this.parent();
+			const dbs = ig.arcaneLabDatabase.get("modifierCards");
+			const dbl = dbs.both.concat(dbs.positive, dbs.negative);
 			this.slotGap = (300/Math.max(1, b.size-1));
 			this.modifierData = dbl.filter(vvv => vvv.modifier==b.modifier[a])[0];
 			this.slotType = a==2?true:false;
@@ -1069,6 +1070,8 @@ ig.module("game.feature.menu.gui.al-modifier-card-menu").requires("impact.featur
             this.msgBox.resize();
 		},
 		show: function(a) {
+			const dbs = ig.arcaneLabDatabase.get("modifierCards");
+			const dbl = dbs.both.concat(dbs.positive, dbs.negative);
 			for(var i=0; i<3; i++) {
 				var g = getModifierIcon(a.modifier[i]);
 				this.modifierIcon[i].setImage(g[0], g[1], g[2], g[3], g[3]);
@@ -1202,6 +1205,8 @@ ig.module("game.feature.menu.gui.al-modifier-card-menu").requires("impact.featur
 			this.updateModifier();
 		},
 		updateModifier: function() {
+			const dbs = ig.arcaneLabDatabase.get("modifierCards");
+			const dbl = dbs.both.concat(dbs.positive, dbs.negative);
 			var getModifier = ig.vars.get("modifier-cards.equip")[this.elementType];
 			if(getModifier == null || getModifier.unequip) {
 				for(var i=0; i<3; i++) {

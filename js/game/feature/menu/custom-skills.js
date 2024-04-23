@@ -513,7 +513,7 @@ ig.module("game.feature.menu.gui.al-skill-menu").requires("impact.feature.gui.gu
 		currentElement: 0,
 		skillSlotButton: null,
 		baseSkillList: [
-			"THROW",
+			"THROW_NORMAL",
 			"ATTACK",
 			"DASH",
 			"GUARD"
@@ -609,7 +609,7 @@ ig.module("game.feature.menu.gui.al-skill-menu").requires("impact.feature.gui.gu
 	});
 	sc.AlSkillSlotButton = sc.ButtonGui.extend({
 		baseSkillList: [
-			"THROW",
+			"THROW_NORMAL",
 			"ATTACK",
 			"DASH",
 			"GUARD"
@@ -678,11 +678,11 @@ ig.module("game.feature.menu.gui.al-skill-menu").requires("impact.feature.gui.gu
 					q = sc.model.player.getActiveCombatArt(a-1, sc.PLAYER_ACTION[this.elementSkillList[b]]);
 				if(q) {
 					skillButtonData.skill = this.elementSkillList[b];
-					skillButtonData.description = ig.lang.get("sc.gui.skills.special-types."+this.baseSkillList[b%4]) + " " + Math.ceil((b+1)/4) + " - " + sc.model.player.getCombatArt(a-1, q.name).name.value;
+					skillButtonData.description = ig.lang.get("sc.gui.menu.al-custom-skill.type."+this.baseSkillList[b%4]) + " " + Math.ceil((b+1)/4) + " - " + sc.model.player.getCombatArt(a-1, q.name).name.value;
 				}
 			} else {
 				skillButtonData.skill = this.baseSkillList[b];
-				skillButtonData.description = ig.lang.get("sc.gui.menu.al-custom-skill.base") + " " + ig.lang.get("sc.gui.skills.special-types."+this.baseSkillList[b]);
+				skillButtonData.description = ig.lang.get("sc.gui.menu.al-custom-skill.base") + " " + ig.lang.get("sc.gui.menu.al-custom-skill.type."+this.baseSkillList[b]);
 			}
 			this.setData(skillButtonData);
 		}
@@ -723,17 +723,26 @@ ig.module("game.feature.menu.gui.al-skill-menu").requires("impact.feature.gui.gu
 				var dbs = ig.arcaneLabDatabase.get("customSkills");
 				for (var dbd in dbs) {
 					var dbo = dbs[dbd];
+					if(a.data.hasWalkAnims && dbo.hasWalkAnims){
+						ig.vars.set("custom-skills."+a.data.element+"."+dbd, false);
+					}
 					if(dbo.element == a.data.element || (a.data.comm == "unequip" && a.data.element == "BASE")) {
 						for (var dbl of dbo.list) {
 							if(a.data.comm == "unequip") {
 								if(dbl.actionCheckKey == sc.menu.currentSkillFocus.data.skill) {
 									ig.vars.set("custom-skills."+a.data.element+"."+dbd, false);
+									if (dbo.hasWalkAnims){
+										ig.vars.set("custom-skills.walk-anims.active", false);
+									}
 									break;
 								}
 							} else {
 								for (var dbld of a.data.list) {
 									if(dbl.actionCheckKey == dbld.actionCheckKey) {
 										ig.vars.set("custom-skills."+a.data.element+"."+dbd, false);
+										if (dbo.hasWalkAnims){
+											ig.vars.set("custom-skills.walk-anims.active", false);
+										}
 										break;
 									}
 								}
@@ -741,8 +750,24 @@ ig.module("game.feature.menu.gui.al-skill-menu").requires("impact.feature.gui.gu
 						}
 					}
 				}
+				var chkElemWA = ig.vars.get("custom-skills.walk-anims.source.element");
+				var chkNameWA = ig.vars.get("custom-skills.walk-anims.source.name");
+				if(ig.vars.get("custom-skills."+chkElemWA+"."+chkNameWA)){
+					ig.vars.set("custom-skills.walk-anims.active", true);
+					ig.vars.set("custom-skills.walk-anims.source.element", dbs[chkNameWA].element);
+					ig.vars.set("custom-skills.walk-anims.source.name", chkNameWA);
+					ig.vars.set("custom-skills.walk-anims.activeCondition", dbs[chkNameWA].activeCondition);
+					ig.vars.set("custom-skills.walk-anims.data", dbs[chkNameWA].walkAnims);
+				}
 				if(a.data.comm != "unequip") {
 					ig.vars.set("custom-skills."+a.data.element+"."+a.data.dbId, true);
+					if(a.data.hasWalkAnims){
+						ig.vars.set("custom-skills.walk-anims.active", true);
+						ig.vars.set("custom-skills.walk-anims.source.element", a.data.element);
+						ig.vars.set("custom-skills.walk-anims.source.name", a.data.dbId);
+						ig.vars.set("custom-skills.walk-anims.activeCondition", a.data.activeCondition);
+						ig.vars.set("custom-skills.walk-anims.data", a.data.walkAnims);
+					}
 				}
 				sc.Model.notifyObserver(sc.menu, sc.MENU_EVENT.SKILL_SHOW_EFFECT);
             }.bind(this));
@@ -782,7 +807,8 @@ ig.module("game.feature.menu.gui.al-skill-menu").requires("impact.feature.gui.gu
             this.list.clear();
 			var elementListRev = ["BASE", "NEUTRAL", "HEAT", "COLD", "SHOCK", "WAVE"],
 				unequipButtonData = {
-				name: {"en_US":""},
+				name: {"en_US":"- unequip -"},
+				description: {"en_US":"Take off your current custom skill curcuit."},
 				comm: "unequip",
 				element: elementListRev[sc.menu.currentSkillFocus.data.element],
 				icon: {

@@ -21,6 +21,12 @@
 				}
 			},
 			"al-custom-skill": {
+				"type": {
+					"THROW_NORMAL": "Throw Art",
+					"ATTACK": "Attack Art",
+					"GUARD": "Guard Art",
+					"DASH": "Dash Art"
+				},
 				"default": "Base Skill",
 				"neutral": "Neutral Circuit Skill",
 				"heat": "Heat Circuit Skill",

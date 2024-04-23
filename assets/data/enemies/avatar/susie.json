@@ -51,7 +51,7 @@
     "healDropRate": 0,
     "boss": false,
     "bossOrder": 0,
-    "headIdx": "susie",
+    "headIdx": 12,
     "padding": {
         "x": 2,
         "y": 2

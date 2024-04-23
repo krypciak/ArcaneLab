@@ -21,6 +21,12 @@
 				}
 			},
 			"al-custom-skill": {
+				"type": {
+					"THROW_NORMAL": "던지기 기술",
+					"ATTACK": "근접 기술",
+					"GUARD": "방어 기술",
+					"DASH": "대시 기술"
+				},
 				"default": "기본 기술",
 				"neutral": "일반 회로 기술",
 				"heat": "열기 회로 기술",
