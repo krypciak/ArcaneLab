@@ -9,10 +9,11 @@
   "dependencies": {
     "ccloader": "^2.14.1",
 	"item-api": "^0.*",
-    "extendable-severed-heads": "^1.0.0",
+    "extendable-severed-heads": "^1.1.0",
 	"modifier-api": "^0.1.0",
 	"cc-alybox": ">=1.0.0"
   },
-  "prestart": "prestart.js"
+  "prestart": "prestart.js",
+  "poststart": "poststart.js"
 }
 
